@@ -1,0 +1,146 @@
+/* 整體頁面樣式 - 莫蘭迪色系 */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eae7dc; /* 柔和米白色 */
+  font-family: 'Arial', sans-serif;
+}
+
+/* 醫學分析平台主容器 */
+.medical-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+  background-color: #d6ccc2; /* 柔和灰粉色 */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 平台標題 */
+.medical-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* 上傳文件區域和分析按鈕在同一行 */
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* 讓兩個元素之間有些空間 */
+}
+
+.file-input {
+  flex-grow: 1; /* 讓文件選擇框佔據剩餘空間 */
+}
+
+/* 莫蘭迪色調分析按鈕 */
+.analyze-button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #b7b7a4; /* 莫蘭迪綠灰色 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.analyze-button:hover {
+  background-color: #a5a58d; /* 更深的綠灰色 */
+}
+
+.analyze-button:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* 聚焦時的陰影效果 */
+}
+
+.analyze-button:disabled {
+  background-color: #d3cdc2; /* 禁用狀態的顏色 */
+  cursor: not-allowed;
+}
+
+/* 顯示錯誤提示 */
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  white-space: nowrap; /* 防止換行 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 若提示文字過長，顯示省略號 */
+}
+
+/* 分析結果的樣式 */
+.analysis-container {
+  width: 90%;
+  max-width: 900px;
+  padding: 24px;
+  background-color: #d6ccc2; /* 與平台主頁一致 */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 讓圖表區域有固定高度 */
+.chart-wrapper {
+  width: 100%;
+  height: 400px;
+}
+
+/* 標題樣式 */
+.analysis-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 16px;
+}
+
+/* Recharts 圖表樣式 */
+.recharts-cartesian-grid line {
+  stroke: #cfc9bd !important;
+}
+
+.recharts-bar {
+  fill: #b7b7a4 !important;
+}
+
+.recharts-tooltip-wrapper {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recharts-tooltip-label {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+/* 背景顏色 */
+.morandi-bg {
+  background-color: #D8D8D8; /* 淺灰色背景 */
+}
+
+.morandi-button {
+  background-color: #B1A7A6; /* 淺米色按鈕背景 */
+  color: #ffffff; /* 按鈕文字顏色為白色 */
+}
+
+.morandi-text {
+  color: #5C5C5C; /* 深灰色文字 */
+}
